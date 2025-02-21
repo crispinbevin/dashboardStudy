@@ -1,0 +1,66 @@
+.login-section{
+    min-height: 100vh;
+}
+.login-wrapper{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.login-form-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+.login-form-section img{
+    max-width: 60px;
+}
+
+.login-form-section form{
+    display: flex;
+    flex-direction: column ;
+    gap: 20px;
+}
+
+.login-field input{
+    padding: 8px;
+}
+
+.login-field input{
+
+.login-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-buttons a{
+    color: black;
+}
+
+.custom-button{
+    font-weight: 700;
+     
+}
+
+.login-image{
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.login-image img{
+    width: auto;
+    height: 98vh;
+    object-fit: contain;
+}
+
+@media (width<700px) {
+    .login-image{
+        display: none;
+    }
+}
