@@ -1,5 +1,8 @@
 import React from 'react'
 import './Login.css'
+import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
@@ -22,14 +25,20 @@ function Login() {
             </div>
             <div className='login-buttons'>
               <a href='#'>Forgot password</a>
-              <button className='btn btn-primary custom-button p-2'>Submit</button>
+              <Link to="  "><button className='btn btn-primary custom-button p-2'>Sign In</button></Link>
             </div>
           </form>
+          <div className='quick-divider'> <hr /> or continue with <hr /> </div>
+          <div className="quick-login">
+            <button className='login-social'><FcGoogle style={{fontSize:'2rem'}}/> Google</button>
+            <button className='login-social'><FaGithub style={{fontSize:'2rem'}}/> Github</button>
+          </div>
+          <div className="reg-link">Don't have an account yet? <a href="#">Sign Up</a></div>
         </div>
+      </div>
         <div className="login-image">
           <img src="https://ecme-react.themenate.net/img/others/auth-side-bg.png" alt="" />
         </div>
-      </div>
     </div>
   )
 }

@@ -1,17 +1,25 @@
 .login-section{
     min-height: 100vh;
+    display: flex;
+    margin-inline: 20px ;
 }
 .login-wrapper{
     display: flex;
-    flex-direction: row;
-    min-height: 100vh;
 }
 
 .login-form-section{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
     gap: 40px;
+    width: 100%;
+    margin-left: 350px;
+    justify-content: center;
+}
+
+@media (width<900px) {
+    .login-form-section{
+        margin-inline: min(30%,20px);
+    }
 }
 
 .login-form-section img{
@@ -24,11 +32,29 @@
     gap: 20px;
 }
 
-.login-field input{
-    padding: 8px;
+.login-field{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .login-field input{
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+
+.login-field input::placeholder{
+    color: rgb(193, 192, 192);
+    font-size: 0.9rem;
+}
+
+.login-field label{
+    color: rgb(140, 139, 139);
+    font-weight: 500;
+    font-size: .9rem;
+}
 
 .login-buttons{
     display: flex;
@@ -38,6 +64,12 @@
 
 .login-buttons a{
     color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.login-buttons :nth-child(1){
+ width: 100%;
 }
 
 .custom-button{
@@ -57,10 +89,73 @@
     width: auto;
     height: 98vh;
     object-fit: contain;
+    border-radius: 30px;
+    padding: 10px 0px;
 }
 
-@media (width<700px) {
+
+
+@media (width<900px) {
+    .login-section{
+
+    }
     .login-image{
         display: none;
     }
+    .quick-login{
+        flex-direction: column;
+    }
+}
+.quick-divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.quick-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.login-social{
+    background-color: white;
+    border-width: 1px;
+    padding: 1rem 2.5rem;
+    border-radius: 15px;
+    border-color: rgb(179, 179, 179);
+    box-shadow: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.login-social:hover{
+    border-color: var(--primary);
+    box-shadow:2px var(--primary);
+    color: var(--primary);
+}
+
+.reg-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: grey
+}
+
+.reg-link a{
+    color:black;
+    text-decoration: none;
+}
+.reg-link a:hover{
+    text-decoration: underline;
 }
