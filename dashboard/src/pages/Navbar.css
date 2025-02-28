@@ -1,0 +1,17 @@
+*{
+    list-style: none;
+    text-decoration: none;  
+}
+
+@import "tailwindcss";
+
+.vertical-navbar{
+    background-color: var(--grey-medium);
+    height: 100vh;
+    width: 200px;
+    border-right-color: white ;
+}
+
+.hnav ul li{
+
+}

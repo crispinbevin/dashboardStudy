@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+.nav-horizontal{
+    min-height: 200px;
+    background-color: red !important;
+}
+
+.ecomm-section{
+    min-height: 100vh;
+    background-color: var(--grey-dark);
+    color: white;
+}
+
+.ecomm-wrapper{
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.overview{
+    background-color: var(--grey-medium);
+    min-height: 80vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.overview-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overview-selector{
+    background-color: var(--grey-light);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.select-button{
+    border-radius: 20px;
+}
+
+.sales-target{
+    background-color: var(--grey-medium);
+    border-radius: 20px;
+}
+
+.the-container{
+    background-color: var(--grey-medium);
+    border-radius: 20px;
+}
+
+button{
+    border-radius: 10px;
+}

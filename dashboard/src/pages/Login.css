@@ -96,9 +96,6 @@
 
 
 @media (width<900px) {
-    .login-section{
-
-    }
     .login-image{
         display: none;
     }

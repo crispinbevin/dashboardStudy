@@ -1,8 +1,14 @@
 :root{
     --primary: rgb(13, 109, 252);
+    --grey-light: rgb(64, 64, 64);
+    --grey-medium: rgb(38, 38, 38);
+    --grey-dark: rgb(10, 10, 10);
+    --text-white: rgb(245, 245, 245);
 }
+
+@import "tailwindcss";
 
 *,h3,h6{
     font-family: 'Inter', serif;
-    font-weight: 700;
+    font-weight: 500;
 }

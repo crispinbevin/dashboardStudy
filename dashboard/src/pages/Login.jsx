@@ -25,7 +25,7 @@ function Login() {
             </div>
             <div className='login-buttons'>
               <a href='#'>Forgot password</a>
-              <Link to="  "><button className='btn btn-primary custom-button p-2'>Sign In</button></Link>
+              <Link to="/ecommerce"><button className='btn btn-primary custom-button p-2'>Sign In</button></Link>
             </div>
           </form>
           <div className='quick-divider'> <hr /> or continue with <hr /> </div>
