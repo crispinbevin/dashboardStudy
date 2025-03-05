@@ -4,6 +4,8 @@ import { LineChart, Line, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Radi
 import React, { PureComponent } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
+import ProgressBar from 'react-bootstrap/ProgressBar';
+
 
 function Ecommerce() {
   const data1 = [
@@ -41,8 +43,9 @@ function Ecommerce() {
 
   return (
     <>
+      <Navbar />
       <div className="ecomm-section p">
-        <div className="container ecomm-wrapper">
+        <div className="container py-3 ecomm-wrapper">
           <div className="container overview col-span-3 row-span-3">
             <div className="overview-header">
               <div className="text-2xl pb-3">Overview</div>
@@ -178,7 +181,51 @@ function Ecommerce() {
               </div>
             </div>
           </div>
-          <div className="the-container top-countries">
+          <div className="the-container col-span-3 row-span-2">
+            <h3>Top Countries</h3>
+            <div className="content flex">
+              <img className='w-128' src="https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_%28blue_dots%29.svg" alt="" />
+              <div className="stat-list list-none">
+                <div className="list-item w-full">
+                  <div className="flag-icon flex flex-col gap-4">
+                    <div className='flex gap-2 w-full'>
+                      <img className='h-auto w-4' src="https://ecme-react.themenate.net/img/countries/US.png" alt="" />
+                      <div className="flag-info">
+                        <div>United States</div>
+                        <progress value={0.33}></progress>
+                      </div>
+                    </div>
+                    <div className='flex gap-2 w-full'>
+                      <img className='h-auto w-4' src="https://ecme-react.themenate.net/img/countries/US.png" alt="" />
+                      <div className="flag-info">
+                        <div>United States</div>
+                        <progress value={0.33}></progress>
+                      </div>
+                    </div>
+                    <div className='flex gap-2 w-full'>
+                      <img className='h-auto w-4' src="https://ecme-react.themenate.net/img/countries/US.png" alt="" />
+                      <div className="flag-info">
+                        <div>United States</div>
+                        <progress value={0.33}></progress>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="the-container channel-revenue p-4 flex flex-col gap-3">
+            <div className='flex justify-between'>
+              <div className='text-2xl '>Channel Revenue</div>
+              <DropdownButton title="Monthly" variant='secondary'></DropdownButton>
+            </div>
+            <div className="div flex place-items-center gap-2">
+              <div className="font-extrabold text-3xl">3.4%</div>
+              <div className="div font-extralight text-zinc-500">
+                Growth <br /> rate
+              </div>
+            </div>
+            <div className="bar-graph"></div>
             
           </div>
         </div>

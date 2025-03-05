@@ -5,6 +5,7 @@ import './index.css'
 import Login from './pages/Login.jsx'
 import Ecommerce from './pages/Ecommerce.jsx'
 import Testing from './pages/Testing.jsx'
+import Market from './pages/Market.jsx'
 
 const route = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const route = createBrowserRouter([
   {
     path: '/testing',
     element: <Testing />
+  },
+  {
+    path: '/market',
+    element: <Market />
   }
 ])
 

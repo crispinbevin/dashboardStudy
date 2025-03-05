@@ -50,8 +50,14 @@
 .the-container{
     background-color: var(--grey-medium);
     border-radius: 20px;
+    padding: 1rem;
 }
 
 button{
     border-radius: 10px;
+}
+
+.flag-icon img{
+    width: 30px;
+    height: auto;
 }

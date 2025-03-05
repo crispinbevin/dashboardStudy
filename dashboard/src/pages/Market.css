@@ -1,0 +1,14 @@
+ .d-container{
+    background-color: var(--grey-dark);
+ }
+
+ .l-container{
+    background-color: var(--grey-medium);
+    border-radius: 20px;
+    padding: 2rem;
+ }
+
+ hr{
+    height: 100%;
+    color: white;
+ }
